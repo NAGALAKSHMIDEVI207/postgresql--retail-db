@@ -1,0 +1,38 @@
+create table customer (
+customer_id int NOT NULL,
+phone_number VARCHAR(12) NOT NULL,
+email_id varchar NOT NULL,
+name char(20) NOT NULL,
+gender char NOT NULL,
+age int NOT NULL,
+PRIMARY KEY (customer_id)  
+);
+
+create table orders (
+order_id int NOT NULL,
+cust_id int NOT NULL,
+order_number int NOT NULL,
+order_date DATE NOT NULL,
+PRIMARY KEY (order_id),
+FOREIGN KEY (cust_id) REFERENCES customer(customer_id)
+);
+
+
+CREATE TABLE payment (
+payment_id int not null,
+cust_id int NOT NULL,
+amount int NOT NULL,
+payment_date date NOT NULL,
+PRIMARY KEY (payment_id),
+FOREIGN KEY (cust_id) REFERENCES customer(customer_id)
+);
+
+Create table product(
+product_id int NOT NULL,
+category VARCHAR(20),
+product_name VARCHAR(20),
+brand_name VARCHAR(20),
+price float(10),
+product_quantity int,
+primary key(product_id)
+);

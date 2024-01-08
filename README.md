@@ -19,5 +19,12 @@ orders (order_id, cust_id, order_number, order_date)
 payment (payment_id,cust_id,amount,payment_date)
 product(product_id,category,product_name,brand_name,price,product_quantity)
 
+Relationships
+orders are linked to customer
+payment is linked to orders
+product is linked to payment
+
+
+
 
  

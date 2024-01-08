@@ -15,13 +15,19 @@ Set up the database according to the provided schema.
 #Entities
 
 customer(customer_id,phone_number,email_id,name,gender,age)
+
 orders (order_id, cust_id, order_number, order_date)
+
 payment (payment_id,cust_id,amount,payment_date)
+
 product(product_id,category,product_name,brand_name,price,product_quantity)
 
-Relationships
+#Relationships
+
 orders are linked to customer
+
 payment is linked to orders
+
 product is linked to payment
 
 

@@ -15,4 +15,14 @@ Set up the database according to the provided schema.
 #Entities
 
 Customer_details(customer_id,phone_number,email_id,name,gender,age)
+customer_orders
+
  
+create table orders (
+order_id int NOT NULL,
+cust_id int NOT NULL,
+order_number int NOT NULL,
+order_date DATE NOT NULL,
+PRIMARY KEY (order_id),
+FOREIGN KEY (cust_id) REFERENCES customer(customer_id)
+);

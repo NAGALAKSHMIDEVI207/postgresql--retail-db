@@ -14,5 +14,5 @@ Set up the database according to the provided schema.
 
 #Entities
 
-Customer_details(customer_id,
+Customer_details(customer_id,phone_number,email_id,name,gender,age)
  

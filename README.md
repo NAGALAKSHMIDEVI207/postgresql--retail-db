@@ -14,5 +14,5 @@ Set up the database according to the provided schema.
 
 #Entities
 
-Customer_
+Customer_details
  

@@ -11,5 +11,8 @@ pgadmin4 (version 7.8)
 Clone the repository.
 Install the required dependencies.
 Set up the database according to the provided schema.
-Entities
+
+#Entities
+
+Customer_
  
